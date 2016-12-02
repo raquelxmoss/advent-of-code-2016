@@ -9,8 +9,12 @@ function calculateVector (dir, {x, y}, blocks) {
 
 function distanceAsVector (instructions) {
   return instructions.reduce((acc, curr) => {
-    const dir = Math.abs((curr[0] === 'L' ? -1 : 1) + acc.dir) % 4;
-    const blocks = parseInt(curr.slice(1, curr.length));
+    let dir = (curr[0] === 'L' ? -1 : 1) + acc.dir;
+
+    if (dir < 0) { dir += 4; }
+    dir %= 4;
+
+    const blocks = parseInt((curr.slice(1, curr.length)), 10);
 
     const newVector = calculateVector(dir, {x: acc.x, y: acc.y}, blocks);
 
