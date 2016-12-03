@@ -14,7 +14,7 @@ describe('howFarTo', () => {
     assert.equal(howFarTo(input1), 5);
     assert.equal(howFarTo(input2), 2);
     assert.equal(howFarTo(input3), 12);
-    assert.equal(howFarTo(input4), 101);
-    assert.equal(howFarTo(input5), 12);
+    assert.equal(howFarTo(input4), 307);
+    assert.equal(howFarTo(input5), 226);
   });
 });
