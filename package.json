@@ -10,7 +10,8 @@
   "license": "MIT",
   "dependencies": {
     "babel-preset-es2015": "^6.1.18",
-    "lodash": "^4.17.2"
+    "lodash": "^4.17.2",
+    "mathjs": "^3.8.0"
   },
   "devDependencies": {
     "babel-cli": "^6.2.0",
